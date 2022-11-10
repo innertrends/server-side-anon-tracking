@@ -1,14 +1,14 @@
 # Server Side Anonymous User Ids
 
-Secure and HttpOnly cookies are the most relais and safe method to identify anonymous users without compromising their data.
+The most reliable and safe way to identify anonymous users without compromising their data is through the use of Secure and HttpOnly cookies.
 
-Please follow these steps in order to enable server side anonymous users tracking:
+These steps should be taken in order to set the anonymous id of users on the server side:
 
 1. Generate the HttpOnly cookie
 
-HttpOnly cookies can only be generated using server side scripts. Create a dedicated file on your server that is available on the internet that will create the HttpOnly cookie and set it as a JS POST message.
+Only server-side scripts can create HttpOnly cookies. Making the HttpOnly cookie and setting it as a JS POST message requires a specialized file hosted on your server and accessible from the outside world.
 
-Here is an example on how to do this in PHP:
+Here's a PHP code snippet that demonstrates the process:
 
 ```
 <?php
